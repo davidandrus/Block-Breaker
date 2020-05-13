@@ -6,7 +6,7 @@ public class Level : MonoBehaviour
 {
 
     [SerializeField] int breakableBlocks;
-    SceneLoader sceneLoader;
+    [SerializeField] SceneLoader sceneLoader;
 
     private void Start()
     {
