@@ -3812,6 +3812,16 @@ PrefabInstance:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 813849913}
+    - target: {fileID: 2836097431494792968, guid: 9577cdedd58c4ab42aaf4fed86d1b0ec,
+        type: 3}
+      propertyPath: startVelocity.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836097431494792968, guid: 9577cdedd58c4ab42aaf4fed86d1b0ec,
+        type: 3}
+      propertyPath: startVelocity.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2836097431494792973, guid: 9577cdedd58c4ab42aaf4fed86d1b0ec,
         type: 3}
       propertyPath: m_LocalPosition.x
