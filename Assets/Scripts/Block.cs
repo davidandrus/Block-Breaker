@@ -5,8 +5,15 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
 
+    [SerializeField] AudioClip blockBreakSound;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        AudioSource.PlayClipAtPoint(blockBreakSound, Camera.main.transform.position);
     }
 }
