@@ -19,6 +19,7 @@ public class GameStatus : MonoBehaviour
         int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
         if (gameStatusCount > 1)
         {
+            gameObject.SetActive(false);
             Destroy(gameObject);
         } else
         {
@@ -35,6 +36,11 @@ public class GameStatus : MonoBehaviour
     void Update()
     {
         Time.timeScale = gameSpeed;
+    }
+
+    public void ResetScore()
+    {
+       currentScore = 0;
     }
 
     public void AddToScore ()
