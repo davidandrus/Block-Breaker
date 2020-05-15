@@ -18,7 +18,7 @@ public class Block : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        FindObjectOfType<GameStatus>().AddToScore();
+        FindObjectOfType<GameSession>().AddToScore();
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(blockBreakSound, Camera.main.transform.position);
         level.BlockDestroyed();
